@@ -1,0 +1,3 @@
+[submodule "img_pair_ds"]
+	path = img_pair_ds
+	url = https://github.com/alexz01/Image-Pair-Dataset-GEN.git
