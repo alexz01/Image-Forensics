@@ -113,7 +113,8 @@ class Logistic:
         with self.graph.as_default():
             for epoc in range(epochs):
                 print("epoc: {}".format(epoc) )
-                
+                self.train_step()
+                self.validation_step()
                 # save checkpoint if loss is better than previous best loss
                 if float("{:.3f}".format(self.val_loss)) < float("{:.3f}".format(self.best_loss)):
                     self.best_loss = self.val_loss
